@@ -72,6 +72,7 @@ public class UnitTest1
         Assert.AreEqual(result, gameResult);
     }
 
+    [TestMethod]
     public void GameLogic_Player1WinsScissors_String()
     {
         //Arrange
@@ -85,7 +86,17 @@ public class UnitTest1
         Assert.AreEqual(result, gameResult);
     }
     
-    
+    [TestMethod]
+    public void GameLogic_Player2WinsRock_String(){
+        string result = "Player 2 wins";
+        string user1Input = "scissors";
+        string user2Input = "rock";
+        Game newGame = new Game(user1Input, user2Input);
+        //Act
+        string gameResult = newGame.GameLogic();
+        //Assert 
+        Assert.AreEqual(result, gameResult);
+    }
 } 
 
 // public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()

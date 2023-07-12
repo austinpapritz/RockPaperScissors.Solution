@@ -25,9 +25,9 @@ public class Game
         {
             return "Player 1 wins";
         }
-        else 
+        else
         {
-            return " ";
+            return "Player 2 wins";
         }
         
 
