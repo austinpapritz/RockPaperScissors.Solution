@@ -19,7 +19,9 @@ public class Game
         {
             return "draw";
         } 
-        else if(Player1Move == "rock" && Player2Move == "scissors")
+        else if((Player1Move == "rock" && Player2Move == "scissors") ||
+                (Player1Move == "paper" && Player2Move ==  "rock"))
+        
         {
             return "Player 1 wins";
         }
