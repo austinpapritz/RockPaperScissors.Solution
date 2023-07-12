@@ -15,22 +15,15 @@ public class Game
     public string GameLogic()
     {
         // Draw if selections are same.
-        if (Player1Move == Player2Move)
-        {
+        if (Player1Move == Player2Move){
             return "draw";
         } 
-        else if((Player1Move == "rock" && Player2Move == "scissors") ||
-                (Player1Move == "paper" && Player2Move ==  "rock") || (Player1Move == "scissors" && Player2Move ==  "paper"))
-        
-        {
+        else if ((Player1Move == "rock" && Player2Move == "scissors") ||
+                (Player1Move == "paper" && Player2Move ==  "rock") || (Player1Move == "scissors" && Player2Move ==  "paper")){
             return "Player 1 wins";
         }
-        else
-        {
+        else {
             return "Player 2 wins";
         }
-        
-
-        
     }
 }
