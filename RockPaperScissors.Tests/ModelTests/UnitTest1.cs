@@ -109,6 +109,18 @@ public class UnitTest1
         //Assert 
         Assert.AreEqual(result, gameResult);
     }
+
+        [TestMethod]
+    public void GameLogic_Player2WinsScissors_String(){
+        string result = "Player 2 wins";
+        string user1Input = "paper";
+        string user2Input = "scissors";
+        Game newGame = new Game(user1Input, user2Input);
+        //Act
+        string gameResult = newGame.GameLogic();
+        //Assert 
+        Assert.AreEqual(result, gameResult);
+    }
 } 
 
 // public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
