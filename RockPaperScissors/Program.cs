@@ -1,4 +1,4 @@
-﻿namespace RockPaperScissors
+﻿namespace RockPaperScissors;
 class Program
 {
     static void Main()

@@ -9,7 +9,11 @@ namespace RockPaperScissors.Tests;
 public class UnitTest1
 {
     [TestMethod]
-    public void TestMethod1()
+    public void PlayerConstructor_CreateInstanceOfPlayer()
     {
+        // Arrange
+        Player newPlayer = new Player();
+        // Assert
+        Assert.AreEqual(typeof(Player), newPlayer.GetType());
     }
 }
