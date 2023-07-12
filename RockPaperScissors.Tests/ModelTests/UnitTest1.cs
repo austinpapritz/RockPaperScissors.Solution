@@ -12,21 +12,21 @@ public class UnitTest1
     public void GameConstructor_CreateInstanceOfGame()
     {
         // Arrange
-        Game newGame = new Game("rock");
+        Game newGame = new Game("rock", "rock");
         // Assert
         Assert.AreEqual(typeof(Game), newGame.GetType());
     }
 
-    // [TestMethod]
-    // public void PlayerConstructor_TakesInUserMove_String()
-    // {
-    //     // Arrange
-    //     string userInput = "rock";
-    //     // Act
-    //     Game newGame = new Game(userInput);
-    //     string playerMove = newPlayer.MoveSelection;
-    //     // Assert
-    //     Assert.AreEqual(userInput, playerMove);
+    [TestMethod]
+    public void GameConstructor_TakesInUserMove_String()
+    {
+        // Arrange
+        string user1Input = "rock";
+        string user2Input = "rock";
+        // Act
+        Game newGame = new Game(user1Input, user2Input);
+        // Assert
+        Assert.AreEqual(user1Input, user2Input, Game.Player1Move, Game.Player2Move);
     // }
     
     // [TestMethod]
