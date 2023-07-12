@@ -43,6 +43,17 @@ public class UnitTest1
         // Assert
         Assert.AreEqual(result, gameResult);
     }
+
+    [TestMethod]
+    public void GameLogic_Player1WinsRock_String(){
+        string result = "Player 1 wins";
+        string user1Input = "rock";
+        string user2Input = "scissors";
+        Game newGame = new Game(user1Input, user2Input);
+        string gameResult = newGame.GameLogic();
+        Assert.AreEqual(result, gameResult);
+    }
+    
     
 } 
 

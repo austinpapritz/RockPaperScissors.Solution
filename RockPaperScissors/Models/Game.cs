@@ -18,8 +18,17 @@ public class Game
         if (Player1Move == Player2Move)
         {
             return "draw";
-        } else {
-            return "";
+        } 
+        else if(Player1Move == "rock" && Player2Move == "scissors")
+        {
+            return "Player 1 wins";
         }
+        else 
+        {
+            return " ";
+        }
+        
+
+        
     }
 }
