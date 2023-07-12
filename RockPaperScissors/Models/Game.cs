@@ -8,18 +8,18 @@ public class Game
 
     public Game(string input1, string input2)
     {
-        // Player1Move = input1;
-        // Player2Move = input2;
+        Player1Move = input1;
+        Player2Move = input2;
     }
 
-    // public string GameLogic()
-    // {
-    //     // Draw if selections are same.
-    //     if (Player1Move == Player2Move)
-    //     {
-    //         return "draw";
-    //     } else {
-    //         return "";
-    //     }
-    // }
+    public string GameLogic()
+    {
+        // Draw if selections are same.
+        if (Player1Move == Player2Move)
+        {
+            return "draw";
+        } else {
+            return "";
+        }
+    }
 }

@@ -26,21 +26,23 @@ public class UnitTest1
         // Act
         Game newGame = new Game(user1Input, user2Input);
         // Assert
-        Assert.AreEqual(user1Input, user2Input, Game.Player1Move, Game.Player2Move);
-    // }
+        Assert.AreEqual(user1Input, newGame.Player1Move);
+        Assert.AreEqual(user2Input, newGame.Player2Move);
+    }
     
-    // [TestMethod]
-    // public void GameLogic_DrawResults_String()
-    // {
-    //     //Arrange
-    //     string result = "draw";
-    //     Player newPlayer1 = new Player("rock");
-    //     Player newPlayer2 = new Player("rock");
-    //     // Act
-    //     string gameResults = Player.GameLogic(newPlayer1.MoveSelection, newPlayer2.MoveSelection);
-    //     // Assert
-    //     Assert.AreEqual(result, gameResults);
-    // }
+    [TestMethod]
+    public void GameLogic_DrawResults_String()
+    {
+        //Arrange
+        string result = "draw";
+        string user1Input = "rock";
+        string user2Input = "rock";
+        Game newGame = new Game(user1Input, user2Input);
+        // Act
+        string gameResult = newGame.GameLogic();
+        // Assert
+        Assert.AreEqual(result, gameResult);
+    }
     
 } 
 
