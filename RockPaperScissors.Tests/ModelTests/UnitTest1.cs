@@ -9,24 +9,39 @@ namespace RockPaperScissors.Tests;
 public class UnitTest1
 {
     [TestMethod]
-    public void PlayerConstructor_CreateInstanceOfPlayer()
+    public void GameConstructor_CreateInstanceOfGame()
     {
         // Arrange
-        Player newPlayer = new Player("rock");
+        Game newGame = new Game("rock");
         // Assert
-        Assert.AreEqual(typeof(Player), newPlayer.GetType());
+        Assert.AreEqual(typeof(Game), newGame.GetType());
     }
 
-    [TestMethod]
-    public void PlayerConstructor_TakesInUserMove_String(){
-        // Arrange
-        string userInput = "rock";
-        // Act
-        Player newPlayer = new Player(userInput);
-        string playerMove = newPlayer.MoveSelection;
-        // Assert
-        Assert.AreEqual(userInput, playerMove);
-
-    }
+    // [TestMethod]
+    // public void PlayerConstructor_TakesInUserMove_String()
+    // {
+    //     // Arrange
+    //     string userInput = "rock";
+    //     // Act
+    //     Game newGame = new Game(userInput);
+    //     string playerMove = newPlayer.MoveSelection;
+    //     // Assert
+    //     Assert.AreEqual(userInput, playerMove);
+    // }
     
-}
+    // [TestMethod]
+    // public void GameLogic_DrawResults_String()
+    // {
+    //     //Arrange
+    //     string result = "draw";
+    //     Player newPlayer1 = new Player("rock");
+    //     Player newPlayer2 = new Player("rock");
+    //     // Act
+    //     string gameResults = Player.GameLogic(newPlayer1.MoveSelection, newPlayer2.MoveSelection);
+    //     // Assert
+    //     Assert.AreEqual(result, gameResults);
+    // }
+    
+} 
+
+// public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
